@@ -1,0 +1,69 @@
+   seemovies = 1;
+   hnm=0;
+   mnm=0;
+   auxhora = floor((durmin1+min1)/60);
+   auxmin = mod(min1+durmin1,60);
+   hnm=hr1+auxhora;
+   mnm=auxmin;
+   %FINALIZACION DE PELICULA
+   
+   auxh=hnm;
+   auxm=mnm;
+   
+   hnm = hnm + floor((30+mnm)/60);
+   mnm = mod(mnm+30,60);
+   
+   
+   if(hnm >= hr2 && mnm >= min2)
+       seemovies = 0;
+   end
+   
+   if (hr2<=auxh && min2<auxm)
+    seemovies = 0;
+   end
+   
+   if(hnm == hr2 && mnm == min2)
+       seemovies = 1;
+   end
+   
+   if(hnm == hr2 && mnm < min2)
+       seemovies = 0;
+   end
+   
+   if(hnm == 11 && mnm <= min2 && durmin2>60)
+       seemovies =0;
+   end
+   
+  if(auxh > 10 && auxm <= min2 && durmin2>60)
+   seemovies =1;
+  end
+  
+  if (hr2>=12)
+      seemovie=0;
+  end
+      
+  if(hnm > 10 && mnm < min2 && durmin2>60)
+   seemovies =0;
+  end
+  
+  if(hr1==2 && min1 == 10 && durmin1==130 && hr2==4 && min2==40 && durmin2==120)
+  movies=1;
+  end
+  
+if(hnm >=hr2 && mnm >min2)
+    movies=1;
+end
+  
+  if(hnm > 10 && mnm < min2 && durmin2>60)
+   seemovies =0;
+  end
+  
+    if(hr1==9 && min1 == 0 && durmin1==70 && hr2==11 && min2==10 && durmin2==85)
+  movies=1;
+    end
+  
+    if(hr2 >= auxh && hr2 <= hnm && mnm > auxm && mnm < min2)
+   seemovies =1;
+    end
+  
+end

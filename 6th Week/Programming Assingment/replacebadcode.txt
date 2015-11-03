@@ -1,0 +1,58 @@
+if nargin ==3
+        %SE OMITE C DEVUELVE B B
+    for i=1:length(v)
+        if v(i)==a
+            aux=1:length(v)-i-1;
+            aux2=1:i-1;
+            %take the first i-1 elementes
+            for r=1:i-1
+                aux2(r)=v(r);
+            end
+            %take the last i elements
+            for j=1:length(v)-i
+                aux(j)=v(i+j);
+            end
+            %concatanation vector
+            v=[aux2 b b aux];
+        end
+    end
+    
+    elseif nargin==2
+        
+    for i=1:length(v)
+        if v(i)==a
+            aux=1:length(v)-i-1;
+            aux2=1:i-1;
+            %take the first i-1 elementes
+            for r=1:i-1
+                aux2(r)=v(r);
+            end
+            %take the last i elements
+            for j=1:length(v)-i
+                aux(j)=v(i+j);
+            end
+            %concatanation vector
+            v=[aux2 0 0 aux];
+        end
+    end
+    
+    else
+    %TODOS LOS ARGUMENTOS   
+    for i=1:length(v)
+        if v(i)==a
+            aux=1:length(v)-i-1;
+            aux2=1:i-1;
+            %take the first i-1 elementes
+            for r=1:i-1
+                aux2(r)=v(r);
+            end
+            %take the last i elements
+            for j=1:length(v)-i
+                aux(j)=v(i+j);
+            end
+            %concatanation vector
+            v=[aux2 b c aux];
+        end
+    end
+    end
+    w=v;

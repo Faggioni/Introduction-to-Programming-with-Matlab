@@ -17,11 +17,13 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 *.mp4
+*.pdf
 
 # =========================
 # Operating System Files
 # =========================
 .mp4
+.pdf
 
 # OSX
 # =========================
@@ -37,6 +39,7 @@ $RECYCLE.BIN/
 .Spotlight-V100
 .Trashes
 .mp4
+.pdf
 
 # Directories potentially created on remote AFP share
 .AppleDB
