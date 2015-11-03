@@ -13,13 +13,14 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
+*.mp4
 # Windows shortcuts
 *.lnk
-
+*.mp4
 # =========================
 # Operating System Files
 # =========================
+.mp4
 
 # OSX
 # =========================
@@ -34,6 +35,7 @@ $RECYCLE.BIN/
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+.mp4
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -41,3 +43,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.mp4
