@@ -1,7 +1,7 @@
-function [number] = dial(string)
+function [out] = dial(string)
 %dial Summary of this function goes here
 %   Detailed explanation goes here
-
+%SE DEBE REPARAR EL PROBLEMA DE Q
 
     for i=1:length(string)
         
@@ -42,14 +42,27 @@ function [number] = dial(string)
                     number(i) = ' ';
 
                 elseif ((double(string(i))) == 81)
+                    number(i) = ' ';
                 end
 
             else
                 number(i)=string(i);
-
-
-
             end
     end
+    %ELIMINACION DE Q
+    j=1;
+    t=1;
+    while (t <= length(number))
+        if (number(t) ~= 'Q')
+           out(j)=number(t);
+            j=j+1;
+            t=t+1;
+        else
+            t=t+1;
+        end
+    end
+    
+    
+    
 end
 
