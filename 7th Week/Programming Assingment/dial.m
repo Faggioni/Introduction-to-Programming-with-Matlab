@@ -6,7 +6,7 @@ function [out] = dial(string)
         
     for i=1:length(string)
         
-            if ((65 <= double(string(i))) && (double(string(i)) <= 89)) || ((double(string(i))) == 45)
+            if ((65 <= double(string(i))) && (double(string(i)) <= 89)) || ((double(string(i))) == 45) || ((double(string(i))) == 41) || ((double(string(i))) == 40)
 
                 if (((65 <= double(string(i))) && (double(string(i)) <= 67)))
                     out(j) = '2';
