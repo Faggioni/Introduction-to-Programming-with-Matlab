@@ -1,0 +1,45 @@
+function [number] = roman(romannumber)
+%UNTITLED Summary of this function goes here
+%   Detailed explanation goes here
+    
+    if romannumber == 'I'
+        number =uint8(1);
+    elseif romannumber == 'II'
+            number =uint8(2);
+        elseif romannumber == 'III'
+            number =uint8(3);
+            elseif romannumber == 'IV'
+            number =uint8(4);
+            elseif romannumber == 'V'
+            number =uint8(5);
+            elseif romannumber == 'VI'
+            number =uint8(6);
+            elseif romannumber == 'VII'
+            number =uint8(7);
+            elseif romannumber == 'VIII'
+            number =uint8(8);
+            elseif romannumber == 'IX'
+            number =uint8(9);
+            elseif romannumber == 'X'
+            number =uint8(10);
+            elseif romannumber == 'XI'
+            number =uint8(11);
+            elseif romannumber == 'XII'
+            number =uint8(12);
+            elseif romannumber == 'XIII'
+            number =uint8(13);
+            elseif romannumber == 'IXV'
+            number =uint8(14);
+            elseif romannumber == 'XV'
+            number =uint8(15);
+            elseif romannumber == 'II'
+            number =uint8(2);
+            elseif romannumber == 'II'
+            number =uint8(2);
+            elseif romannumber == 'II'
+            number =uint8(2);
+            elseif romannumber == 'II'
+            number =uint8(2);
+
+end
+
