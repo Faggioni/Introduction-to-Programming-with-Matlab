@@ -3,7 +3,7 @@ function [out] = dial(string)
 %   Detailed explanation goes here
 %SE DEBE REPARAR EL PROBLEMA DE Q
     j=1;
-        
+    
     for i=1:length(string)
         
             if ((65 <= double(string(i))) && (double(string(i)) <= 89)) || ((double(string(i))) == 45)
@@ -50,35 +50,21 @@ function [out] = dial(string)
                 elseif ((double(string(i))) == 45)
                     out(j) = ' ';
                     j=j+1;
-                    
-                elseif ((double(string(i))) == 40)
-                    out(j) = ' ';
-                    j=j+1;
-                    
-                elseif ((double(string(i))) == 41)
-                    out(j) = ' ';
-                    j=j+1;
+
                 elseif ((double(string(i))) == 81)
                     
-                
                 end
+
             else
                 out(j)=string(i);
                 j=j+1;
             end
     end
-
+    out=upper(out);
+    
     if ~isempty((strfind(string,'Q')))
         out=[];
     elseif ~isempty((strfind(string,'Z')))
-        out=[];
-    elseif ~strcmp(upper(string),string)
-        out=[];
-    elseif ~isempty((strfind(string,'?')))
-        out=[];
-        elseif ~isempty((strfind(string,'!')))
-        out=[];
-    elseif ~isempty((strfind(string,':')))
         out=[];
     end
     %ELIMINACION ESPACIO DEL INICIO
