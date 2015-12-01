@@ -3,6 +3,10 @@ function [counter] = letter_counter(filename)
 %   Detailed explanation goes here
     
     fid = fopen(filename,'rt');
+    if fid < 0
+        error('There is a problem opening the file: %s \n', filename);
+    else
+    
     oneline = fgets(fid);
     counter = 0;
     while ischar(oneline)
@@ -13,7 +17,7 @@ function [counter] = letter_counter(filename)
         end
         oneline = fgets(fid);
     end
+    end
     fclose(fid);
-    
 end
 
